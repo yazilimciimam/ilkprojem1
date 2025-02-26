@@ -1,0 +1,149 @@
+/**
+ * DijiHanem 2025 - Profilim CSS Dosyası
+ * Bu dosya, Profilim sayfasına özel stil tanımlarını içerir
+ */
+
+/* Profil Kartı Stilleri */
+.profile-card {
+    padding: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+/* Profil Avatar */
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+.profile-avatar i {
+    font-size: 50px;
+    color: var(--text-color);
+}
+
+#profile-username {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+#profile-email {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+/* İstatistik Öğeleri */
+.stat-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.3s;
+}
+
+.stat-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(139, 92, 246, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.stat-info h4 {
+    font-size: 0.9rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.stat-info p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 5px 0 0;
+    color: var(--text-color);
+}
+
+/* Orman Görünümü */
+.forest-container {
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+    .profile-card {
+        padding: 20px;
+    }
+    
+    .profile-avatar {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .profile-avatar i {
+        font-size: 40px;
+    }
+    
+    .stat-item {
+        padding: 10px;
+    }
+    
+    .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .stat-info p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-avatar {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .profile-avatar i {
+        font-size: 35px;
+    }
+    
+    #profile-username {
+        font-size: 1.3rem;
+    }
+}
